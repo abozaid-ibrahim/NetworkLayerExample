@@ -7,11 +7,10 @@
 //
 
 import Foundation
-import RxAlamofire
-import RxSwift
 import Alamofire
+import RxSwift
+import RxAlamofire
 struct BaseEntity: Decodable {
-    let id: Int?
 }
 
 class RxClient{
@@ -30,6 +29,7 @@ class RxClient{
                     let user =  data.decode(res: T.self)
                     if let user = user{
                         subscriber.onNext(user)
+                        subscriber.onCompleted()
                     }else{
                         subscriber.onError(APIError.dataIsNil)                    }
                 }).disposed(by: self.disposeBag)

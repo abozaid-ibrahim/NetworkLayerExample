@@ -19,18 +19,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        
         getRemotely(path: UserService.users(), entity: BaseEntity.self).subscribe(onNext: {user in
-            
+            print(">>user object is .....")
+            print(user)
         }, onError: {error in
-            
+            print(">>>error")
         }).disposed(by: bag)
         
-        requestRemotely(path:UserService.login(start: 0, limit: 10),
-                        entity: BaseEntity.self,
-                        response: {user in
-                            
-                            
-                            
-        })
+//        requestRemotely(path:UserService.login(start: 0, limit: 10),
+//                        entity: BaseEntity.self,
+//                        response: {user in
+//
+//
+//
+//        })
         
     }
     

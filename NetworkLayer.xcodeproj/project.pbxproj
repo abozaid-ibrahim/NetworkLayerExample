@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A901ABD2233CFFF44027C1E /* libPods-NetworkLayerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D0E1D4A2A2808092D8EED2 /* libPods-NetworkLayerUITests.a */; };
+		413149CDD4BDDFB03567581F /* Pods_NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392ECBECBEDB8EB589CB6F5A /* Pods_NetworkLayer.framework */; };
+		6C30D378B287AA92389E2144 /* libPods-NetworkLayerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B71D2C2A436EA57CC71DDD0A /* libPods-NetworkLayerTests.a */; };
 		9B18FAE820BBDA460093C07B /* ViewController+RxApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18FAE720BBDA460093C07B /* ViewController+RxApiClient.swift */; };
 		9B2F926720B5D11000B34593 /* RxApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2F926620B5D11000B34593 /* RxApiClient.swift */; };
 		9B58083420B4669B00F05002 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B58083320B4669B00F05002 /* UserService.swift */; };
@@ -48,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		272DBD7927236645B2EC7E04 /* Pods-NetworkLayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkLayerUITests/Pods-NetworkLayerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		392ECBECBEDB8EB589CB6F5A /* Pods_NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F0FE9B5F1F77859BFAFC52 /* Pods-NetworkLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkLayer/Pods-NetworkLayer.debug.xcconfig"; sourceTree = "<group>"; };
+		7A2AE8B996F928D1489530AD /* Pods-NetworkLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkLayer/Pods-NetworkLayer.release.xcconfig"; sourceTree = "<group>"; };
 		9B18FAE720BBDA460093C07B /* ViewController+RxApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+RxApiClient.swift"; sourceTree = "<group>"; };
 		9B2F926620B5D11000B34593 /* RxApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxApiClient.swift; sourceTree = "<group>"; };
 		9B58083320B4669B00F05002 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -75,6 +82,11 @@
 		9B9C230C20AC44A1004E9F98 /* BaseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
 		9BF5EEAE20B4FA15008AED8E /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		9BF6CF7120B4FBD400FC42B9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A9D0E1D4A2A2808092D8EED2 /* libPods-NetworkLayerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetworkLayerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B71D2C2A436EA57CC71DDD0A /* libPods-NetworkLayerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetworkLayerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE91CBD479145C30CFCAA7EE /* Pods-NetworkLayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkLayerUITests/Pods-NetworkLayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6FBB865D418F0C1DF317B75 /* Pods-NetworkLayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkLayerTests/Pods-NetworkLayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		DBBB87108B4F4441937B068E /* Pods-NetworkLayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkLayerTests/Pods-NetworkLayerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,7 @@
 				9BF5EEAF20B4FA15008AED8E /* RxSwift.framework in Frameworks */,
 				9B72501A20BCB74F00BA7D78 /* RxAlamofire.framework in Frameworks */,
 				9BF6CF7220B4FBD400FC42B9 /* Alamofire.framework in Frameworks */,
+				413149CDD4BDDFB03567581F /* Pods_NetworkLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C30D378B287AA92389E2144 /* libPods-NetworkLayerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,18 +113,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A901ABD2233CFFF44027C1E /* libPods-NetworkLayerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EC54704929295F5273A12EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55F0FE9B5F1F77859BFAFC52 /* Pods-NetworkLayer.debug.xcconfig */,
+				7A2AE8B996F928D1489530AD /* Pods-NetworkLayer.release.xcconfig */,
+				DBBB87108B4F4441937B068E /* Pods-NetworkLayerTests.debug.xcconfig */,
+				D6FBB865D418F0C1DF317B75 /* Pods-NetworkLayerTests.release.xcconfig */,
+				CE91CBD479145C30CFCAA7EE /* Pods-NetworkLayerUITests.debug.xcconfig */,
+				272DBD7927236645B2EC7E04 /* Pods-NetworkLayerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		51BFC51A62C8967E6EDDC185 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				9B72501920BCB74F00BA7D78 /* RxAlamofire.framework */,
 				9BF6CF7120B4FBD400FC42B9 /* Alamofire.framework */,
 				9BF5EEAE20B4FA15008AED8E /* RxSwift.framework */,
+				392ECBECBEDB8EB589CB6F5A /* Pods_NetworkLayer.framework */,
+				B71D2C2A436EA57CC71DDD0A /* libPods-NetworkLayerTests.a */,
+				A9D0E1D4A2A2808092D8EED2 /* libPods-NetworkLayerUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,6 +210,7 @@
 				9B9C22FA20AC40CA004E9F98 /* NetworkLayerUITests */,
 				9B9C22D920AC40C8004E9F98 /* Products */,
 				51BFC51A62C8967E6EDDC185 /* Frameworks */,
+				2EC54704929295F5273A12EE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,10 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B9C230020AC40CA004E9F98 /* Build configuration list for PBXNativeTarget "NetworkLayer" */;
 			buildPhases = (
+				965A271949B4C9052BBB2B63 /* [CP] Check Pods Manifest.lock */,
 				9B9C22D420AC40C8004E9F98 /* Sources */,
 				9B9C22D520AC40C8004E9F98 /* Frameworks */,
 				9B9C22D620AC40C8004E9F98 /* Resources */,
-				9BF6CF7020B4FB0D00FC42B9 /* Carthage Run Script */,
+				B259BF43B85828091A26F54B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,22 +425,47 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9BF6CF7020B4FB0D00FC42B9 /* Carthage Run Script */ = {
+		965A271949B4C9052BBB2B63 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Carthage Run Script";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkLayer-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B259BF43B85828091A26F54B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NetworkLayer/Pods-NetworkLayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-framework/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkLayer/Pods-NetworkLayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -599,6 +657,7 @@
 		};
 		9B9C230120AC40CA004E9F98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F0FE9B5F1F77859BFAFC52 /* Pods-NetworkLayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -610,10 +669,7 @@
 				);
 				INFOPLIST_FILE = NetworkLayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzd.NetworkLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -624,6 +680,7 @@
 		};
 		9B9C230220AC40CA004E9F98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A2AE8B996F928D1489530AD /* Pods-NetworkLayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -635,10 +692,7 @@
 				);
 				INFOPLIST_FILE = NetworkLayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzd.NetworkLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -649,16 +703,13 @@
 		};
 		9B9C230420AC40CA004E9F98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBBB87108B4F4441937B068E /* Pods-NetworkLayerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkLayerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzd.NetworkLayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -669,16 +720,13 @@
 		};
 		9B9C230520AC40CA004E9F98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FBB865D418F0C1DF317B75 /* Pods-NetworkLayerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkLayerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzd.NetworkLayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -689,15 +737,12 @@
 		};
 		9B9C230720AC40CA004E9F98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE91CBD479145C30CFCAA7EE /* Pods-NetworkLayerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkLayerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzd.NetworkLayerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -708,15 +753,12 @@
 		};
 		9B9C230820AC40CA004E9F98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 272DBD7927236645B2EC7E04 /* Pods-NetworkLayerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkLayerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzd.NetworkLayerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
