@@ -16,7 +16,7 @@ public typealias Parameters = [String: Any]
 
 
 public protocol MyRequestBuilder{
-    var mainURL: URL { get }
+    var baseURL: URL { get }
     var path: String { get }
     var method: MyHttpMethods { get }
     var headers: [String: String]? { get }
@@ -32,12 +32,12 @@ public extension MyRequestBuilder {
 
 ///Done By Default
 extension MyRequestBuilder {
-    var mainURL: URL  {
+    var baseURL: URL  {
         return URL(string: "https://jsonplaceholder.typicode.com/")!
     }
     
     var requestURL: URL {
-        return mainURL.appendingPathComponent(path)
+        return baseURL.appendingPathComponent(path)
     }
     
     var urlRequest: URLRequest {

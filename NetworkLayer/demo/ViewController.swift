@@ -18,20 +18,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        getRemotely(path: UserService.users(), entity: BaseEntity.self).subscribe(onNext: {user in
+        getRemotely(path: UserApi.users(), entity: BaseEntity.self).subscribe(onNext: {user in
             print(">>user object is .....")
             print(user)
         }, onError: {error in
             print(">>>error")
         }).disposed(by: bag)
+//
+        getRemotely(path: UserApi.albums(), entity: AlbumsEntity.self).subscribe(onNext: {user in
+            print(">>album object is .....")
+            print(user)
+        }, onError: {error in
+            print(">>>error")
+        }).disposed(by: bag)
         
-//        requestRemotely(path:UserService.login(start: 0, limit: 10),
-//                        entity: BaseEntity.self,
-//                        response: {user in
-//
-//
-//
-//        })
+
+
         
     }
     

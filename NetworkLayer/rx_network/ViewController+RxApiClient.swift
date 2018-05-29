@@ -8,7 +8,17 @@
 
 import UIKit
 import RxSwift
-extension UIViewController{
+protocol NetworkCalls {
+    func getRemotely<T:Decodable>(
+        path:MyRequestBuilder,
+        entity:T.Type
+        )->Observable<T>
+}
+
+
+
+
+ extension UIViewController:NetworkCalls{
     
     func getRemotely<T:Decodable>(
         path:MyRequestBuilder,
@@ -16,7 +26,7 @@ extension UIViewController{
         )->Observable<T>
     {
         
-        return  RxClient.shared.rxRequest(request: path, object: entity)
+        return  RxClient.shared.get(request: path, entity: entity)
     }
     
 }

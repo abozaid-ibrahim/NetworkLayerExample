@@ -9,26 +9,27 @@
 import Foundation
 // 1:
 
-let lang = "ar"// LanguageManager.sharedInstance.getSelectedLocale()
-enum UserService {
-    case login(start: Int, limit: Int)
+enum UserApi {
+    case posts(start: Int, limit: Int)
+    case albums()
     case users()
 }
 
 // 2:
-extension UserService: MyRequestBuilder {
+extension UserApi: MyRequestBuilder {
     var headers: [String : String]? {
         return [:]
     }
-    var baseURL: URL { return URL(string: "apiConstants.base_url")! }
     
     var path: String {
         switch self {
             
-        case .login(_, _):
-            return "categories"
+        case .posts(_, _):
+            return "posts/1"
         case .users():
             return "users"
+        case .albums():
+            return "albums/1"
         }
     }
     var method: MyHttpMethods {
@@ -45,16 +46,17 @@ extension UserService: MyRequestBuilder {
     // 6:
     var parameters: Parameters? {
         switch self {
-        case .login(let start, let limit):
-            return ["start": start, "limit": limit,"lang":lang]
+        case .posts(let start, let limit):
+            return ["start": start, "limit": limit,"lang":"en"]
         case .users():
             var parameters = [String: Any]()
             parameters["start"] = 0
             parameters["limit"] = 0
             parameters["category_id"] = 0
-            parameters["lang"] = lang
+            parameters["lang"] = "en"
             return nil
-            
+        default:
+            return nil
         }
     }
     

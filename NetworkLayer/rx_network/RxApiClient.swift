@@ -10,25 +10,25 @@ import Foundation
 import Alamofire
 import RxSwift
 import RxAlamofire
-struct BaseEntity: Decodable {
-}
+
 
 class RxClient{
     
-    let disposeBag = DisposeBag()
-    
+    private let disposeBag = DisposeBag()
     public static let shared = RxClient()
     
-    public func rxRequest<T:Decodable>(request:MyRequestBuilder ,
-                                       object: T.Type)->Observable<T>{
+    public func get<T:Decodable>(request:MyRequestBuilder ,
+                                       entity: T.Type)->Observable<T>{
         return Observable.create( { subscriber in
             
             RxAlamofire.requestData(HTTPMethod(rawValue: request.method.rawValue)!, request.requestURL, parameters: request.parameters, encoding: request.encoding, headers: request.headers)
                 .debug()
                 .subscribe(onNext: {(response,data) in
-                    let user =  data.decode(res: T.self)
-                    if let user = user{
-                        subscriber.onNext(user)
+                    print("Json Response>>>\n\(String(data:data, encoding: .utf8) ?? "")" )
+
+                    let decodable =  data.decode(decodabel: entity)
+                    if let result = decodable{
+                        subscriber.onNext(result)
                         subscriber.onCompleted()
                     }else{
                         subscriber.onError(APIError.dataIsNil)                    }

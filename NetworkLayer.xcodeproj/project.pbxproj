@@ -175,14 +175,6 @@
 			path = response;
 			sourceTree = "<group>";
 		};
-		9B58084320B4F0D900F05002 /* services */ = {
-			isa = PBXGroup;
-			children = (
-				9B58083320B4669B00F05002 /* UserService.swift */,
-			);
-			path = services;
-			sourceTree = "<group>";
-		};
 		9B58084620B4F22200F05002 /* alamofire */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,11 +183,20 @@
 			path = alamofire;
 			sourceTree = "<group>";
 		};
+		9B67428E20BD27DE0014DF52 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				9B58083320B4669B00F05002 /* UserService.swift */,
+				9B9C22DD20AC40C8004E9F98 /* ViewController.swift */,
+				9B9C230C20AC44A1004E9F98 /* BaseEntity.swift */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
 		9B80316D20B0C4CB00127F96 /* network */ = {
 			isa = PBXGroup;
 			children = (
 				9B58084620B4F22200F05002 /* alamofire */,
-				9B58084320B4F0D900F05002 /* services */,
 				9B58083E20B4BF5000F05002 /* response */,
 				9B58083D20B4BF4000F05002 /* request */,
 			);
@@ -227,11 +228,10 @@
 		9B9C22DA20AC40C8004E9F98 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9B67428E20BD27DE0014DF52 /* demo */,
 				9B2F926520B5D0F200B34593 /* rx_network */,
 				9B80316D20B0C4CB00127F96 /* network */,
 				9B9C22DB20AC40C8004E9F98 /* AppDelegate.swift */,
-				9B9C230C20AC44A1004E9F98 /* BaseEntity.swift */,
-				9B9C22DD20AC40C8004E9F98 /* ViewController.swift */,
 				9B9C22DF20AC40C8004E9F98 /* Main.storyboard */,
 				9B9C22E220AC40CA004E9F98 /* Assets.xcassets */,
 				9B9C22E420AC40CA004E9F98 /* LaunchScreen.storyboard */,
@@ -669,7 +669,10 @@
 				);
 				INFOPLIST_FILE = NetworkLayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzd.NetworkLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -692,7 +695,10 @@
 				);
 				INFOPLIST_FILE = NetworkLayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzd.NetworkLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -709,7 +715,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkLayerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzd.NetworkLayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -726,7 +736,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkLayerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzd.NetworkLayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -742,7 +756,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkLayerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzd.NetworkLayerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -758,7 +776,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkLayerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzd.NetworkLayerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

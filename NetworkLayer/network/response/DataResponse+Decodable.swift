@@ -7,13 +7,13 @@
 //
 import Alamofire
 extension Data{
-    func decode<T:Decodable>( res: T.Type) ->T?  {
+    func decode<T:Decodable>(decodabel: T.Type) ->T?  {
         do {
-           
-            let todo = try JSONDecoder().decode(res.self, from: self)
-            return todo
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            return try decoder.decode(decodabel, from: self)
         } catch let err {
-            print(">>Parse Json Error\(err)")
+            print(">>>Parse Json Error:\n\(err)")
             return nil
         }
     }
